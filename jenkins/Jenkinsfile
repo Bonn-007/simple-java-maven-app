@@ -1,7 +1,7 @@
 pipeline {
     agent any
-    options {
-        skipStagesAfterUnstable()
+   tools {
+        maven 'jenkins-maven' // Use the name you defined in Global Tool Configuration
     }
     stages {
         stage('Build') {
